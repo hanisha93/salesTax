@@ -2,20 +2,22 @@ package com.company;
 
 public class PurchaseDetails {
 
-    private int noOfItems;
-    private String item;
-    private double Price;
-    private String imported;
+    public int noOfItems;
+    public String item;
+    public double price;
+    public String imported;
+    public String taxable;
 
-    public PurchaseDetails(int noOfItems, String item, double Price, String imported) {
+    public PurchaseDetails(int noOfItems, String item, double price, String imported, String taxable) {
         this.noOfItems = noOfItems;
         this.item = item;
-        this.Price = Price;
+        this.price = price;
         this.imported = imported;
+        this.taxable = taxable;
     }
 
     public String toString() {
-        return noOfItems+" "+item+" "+"at"+Price;
+        return noOfItems + " " + item + " " + "at" + price;
     }
 
 }
